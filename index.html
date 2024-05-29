@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест Javascript 2</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <span class="vertical-list">
+        <div>
+            <h2>Задание 1: Изменение текста</h2>
+            <p id = "task_1_text">Вот обычное предложение, содержащее текст.</p>
+            <button onclick="task_1()">Поменять текст</button>
+        </div>
+        <div id="task_2_div">
+            <h2>Задание 2: Подмена аттрибута class у div</h2>
+            <button onclick="task_2()">Поменять класс</button>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+        <div>
+            <h2>Задание 3: Изменение цвета h1</h2>
+            <h1 id = "task_3_text">Вот обычное предложение, содержащее текст.</h1>
+            <input id="task_3_input" type="color" style="display:inline;">
+            <button style="display:inline;height:28px;position:relative;bottom:3px;" onclick="task_3()">Изменить цвет</button>
+        </div>
+        <div>
+            <h2>Задание 5: Создание li в ul</h2>
+            <ul id="task_4_ul">
+                
+            </ul>
+            <button onclick="task_5()">Добавить li</button>
+            <button onclick="task_5_clear()">Очистить список</button>
+        </div>
+        <div id="task_6_div" class="outlined">
+            <h2>Задание 6: Удаление div при нажатии на кнопку</h2>
+            <p>При нажатии на кнопку снизу, удалится весь этот div!</p>
+            <button onclick="task_6()">Удалить</button>
+        </div>
+        <div>
+            <h2>Задание 7: Изменение изображения</h2>
+            <img id="task_7_img" src="https://avatars.mds.yandex.net/i?id=fcf709488f7f4a5254734a92dbfae561cd4392aa-7672646-images-thumbs&n=13">
+            <button onclick="task_7()">Изменить изображение</button>
+        </div>
+        <div>
+            <h2>Задание 8: Создание таблицы </h2>
+            <div id="task_8_div" class="vertical-list">
+
+            </div>
+            <button onclick="task_8()">Создать таблицу</button>
+            <button onclick="task_8_clear()">Очистить список</button>
+        </div>
+        <div>
+            <h2>Задание 10: Изменение текста h2</h2>
+            <h2 id="task_10_text">Вот обычное предложение, содержащее текст</h2>
+            <button onclick="task_10()">Поменять текст</button>
+        </div>
+        <div>
+            <h2>Задание 11: Показ и скрытие меню при нажатии кнопки</h2>
+            <button id="task_11_button" onclick="task_11()">Скрыть меню</button>
+            <div class="outlined" id="task_11_menu">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div>
+            <h2>Задание 12: Форма с полем ввода и кнопкой</h2>
+            <input id="task_12_input" type="text" style="display:inline;width:300px;">
+            <button style="display:inline;height:24px;position:relative;bottom:1px;width:100px;" onclick="task_12()">Добавить</button>
+            <button style="display:inline;height:24px;position:relative;bottom:1px;width:100px;" onclick="task_12_clear()">Очистить</button>
+            <span id="task_12_menu">
+            </span>
+        </div>
+        <div>
+            <h2>Задание 13: Увеличение числа в span</h2>
+            <span>
+                <h1 id="task_13_number" style="outline-style:double;width:200px;text-align:center;left:15px;position:relative;">0</h1>
+            </span>
+            <button id="task_13_button" onclick="task_13()">Увеличить</button>
+        </div>
+        <div>
+            <h2>Задание 14: Изменения контента по разделам</h2>
+            <div style="outline-style:groove;width:800px;">
+                <span style="display: table;margin: auto; padding-top: 24px;">
+                    <button style="display:inline;height:24px;position:relative;bottom:1px;width:100px;" onclick="task_14('main')">Главная</button>
+                    <button style="display:inline;height:24px;position:relative;bottom:1px;width:100px;" onclick="task_14('about_us')">О нас</button>
+                    <button style="display:inline;height:24px;position:relative;bottom:1px;width:100px;" onclick="task_14('services')">Услуги</button>
+                    <button style="display:inline;height:24px;position:relative;bottom:1px;width:100px;" onclick="task_14('contact_us')">Контакты</button>
+                </span>
+                <div id="task_14">
+                    <div id="task_14_main" style="outline-style:groove;width:800px; height: 500px;">
+                        <h1>Главная</h1>
+                        <h2>Это главная страница сайта</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div id="task_14_about_us" style="outline-style:groove;width:800px; height: 500px; display:none;">
+                        <h1>О нас</h1>
+                        <h2>Здесь рассказывается о нас</h2>
+                        <h3>Сотрудник 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h3>Сотрудник 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h3>Сотрудник 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div id="task_14_services" style="outline-style:groove;width:800px; height: 500px; display:none;">
+                        <h1>Услуги</h1>
+                        <h2>Предлагаемые услуги:</h2>
+                        <ul>
+                            <li>
+                                <h3>
+                                    УСЛУГА 1
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </li>
+                            <li>
+                                <h3>
+                                    УСЛУГА 2
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </li>
+                            <li>
+                                <h3>
+                                    УСЛУГА 3
+                                </h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="task_14_contact_us" style="outline-style:groove;width:800px; height: 500px; display:none;">
+                        <h1>Контакты</h1>
+                        <h2>Обратная связь:</h2>
+                        <h2>Телефон: 88005553535</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </span>
+</body>

@@ -1,0 +1,57 @@
+
+
+.vertical-list button {
+    width: 230px;
+    display: block;
+    margin-top: 4px;
+}
+
+.vertical-list div {
+    margin-top: 32px;
+}
+
+.outlined {
+    display: block;
+    width: 600px;
+    outline-color: red;
+    outline-width: 1px;
+    outline-style: solid;
+    padding-top: 12px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.task_2_class {
+    background-color: rgb(6, 24, 44);
+    display: flex;
+    padding-top: 32px;
+    padding-right: 24px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    padding-bottom: 32px;
+}
+.task_2_class button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 48px;
+    font-style: oblique;
+    align-self: center;
+    border-radius: 256px;
+    border-width: 4px;
+    border-color: orange;
+}
+.task_2_class p {
+    font-variant: small-caps;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    width: 800px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.task_2_class h2 {
+    align-self: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 24px;
+    padding-right: 24px;
+}
